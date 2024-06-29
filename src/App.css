@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  
+  background-image: url('todo.png');
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: coral;
+  border-radius: 10px;
+}
+
+.task > ::-webkit-scrollbar-thumb {
+  @apply bg-slate-500
+}
